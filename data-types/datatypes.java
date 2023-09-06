@@ -20,12 +20,20 @@ public class datatypes
         String string3 = "I am also a string";
         boolean stringEquals = string1.equals(string2);
         String [] stringArray = {"Alpha","Bravo","Charlie","Delta","Echo"};
-        for (int i1 = 0; i1 > stringArray.length; i1++){
-            System.out.println(i1);
+        for (int i1 = 0; i1 < stringArray.length; i1++){
+            System.out.println(stringArray[i1]);
         }
         for (String value : stringArray){
-            System.out.println(value);
+            System.out.print(value);
         }
+        System.out.println(" ");
+        for (int idx = 0; idx < stringArray.length; idx++){
+            System.out.print(stringArray[idx]); 
+            if (idx < stringArray.length-1){
+                System.out.print("-");
+            }
+        }
+        System.out.println(" ");
         System.out.println(i);
         System.out.println(f);
         System.out.println(flag);
